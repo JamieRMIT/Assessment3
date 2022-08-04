@@ -41,19 +41,11 @@ input[type=checkbox]{display: none;}
 
 
 /* Oliver*/
-#navbar {background: #222;}
-
-#navbar ul {flex-direction: column;}
-
-#navbar a {height: 48px;}
-
-.dropdown,.dropmenu {position: static; width: 100%;}
-
-.dropdown a {width: 95% !important;}
-
-.dropmenu a {width: 90% !important;}
-
-
-
+    #navbar {background: #222;}
+    #navbar ul {flex-direction: column;}
+    #navbar a {height: 48px;}
+    .dropdown,.dropmenu {position: static; width: 100%;}
+    .dropdown a {width: 95% !important;}
+    .dropmenu a {width: 90% !important;}
 }
 
