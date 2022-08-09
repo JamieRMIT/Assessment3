@@ -1,51 +1,54 @@
-/*Fonts*/
-/* Defaults */
-* {margin: 0; padding: 0; box-sizing: border-box;}
-body {font-family: sans-serif;}
-.navbar a {text-decoration: none;}
-.navbar li {list-style: none;}
+/* Basic Styling */
+* {box-sizing: border-box; padding: 0; margin: 0;}
+body {font-family: sans-serif; font-size: 16px;}
+nav {background: teal; padding: 0 15px;}
+a {color: white; text-decoration: none;}
+.menu, .submenu {list-style: none;}
+.logo img {height: 50px; Width: 150px; padding: 7.5px 10px 7.5px 0;}
+.item {padding: 10px;}
+.item.button {padding: 9px 5px;}
+.item:not(.button) a:hover, .item a:hover:after {color: #D6EBEB;}
 
-/* Navigation Bar */
-.navbar {display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: teal; color: #fff;}
-.nav-links a {color: #fff;}
-.menu {display: flex; gap: 1em; font-size: 18px;}
-.menu li {padding: 5px 14px;}
-.menu li:hover {background-color: #4c9e9e; border-radius: 5px; transition: 0.3s ease}
+/* Mobile Menu */
+.menu {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+.menu li a {display: block; padding: 15px 5px;}
+.menu li.subitem a {padding: 15px;}
+.toggle {order: 1; font-size: 20px;}
+.item.button {order: 2;}
+.item {order: 3; width: 100%; text-align: center; display: none}
+.active .item {display: block;}
+.button.secondary {border-bottom: 1px #4c9e9e solid;}
 
-/* Drop Menu */
-.dropmenu {position: relative}
-.dropdown {background: rgb(1,139,139); padding: 1em 0; position: absolute; display: none; border-radius: 8px; top: 35px;}
-.dropdown li + li {margin: 10px;}
-.dropdown li {padding: 0.5em 1em; width: 8em; text-align: center;}
-.dropdown li:hover {background-color: #4c9e9e;}
-.dropmenu:hover .dropdown {display: block;}
-input[type=checkbox]{display: none;}
+/* Submenu for Mobile Screens */
+.submenu {display: none;}
+.submenu-active .submenu {display: block;}
+.has-submenu i {font-size: 12px;}
+.has-submenu > a::after {font-family: "Font Awesome 5 free"; font-weight: 900; content: " \f078"; padding-left: 5px; line-height: 16px}
+.subitem a {padding: 10px 15px;}
+.submenu-active {background-color: #4c9e9e; border-radius: 3px;}
 
-/* Logo */
-.logo img {height:58px; width: 178px;}
-
-/* Hamburger Menu */
-.hamburger {display: none; font-size: 24px; user-select: none;}
-
-/*Oliver*/
-
-/* Media Queries */
-@media (max-width: 768px){
-    .menu {display: none; position: absolute; background-color: teal; right: 0; left: 0; text-align: center; padding: 16px 0;} 
-    .menu li:hover {display: inline-block; background-color: #4c9e9e; transition: 0.3 ease;}
-    .menu li + li {margin-top: 12px;}
-    input[type=checkbox]:checked ~ .menu {display: block;}
-    .hamburger {display: block;}
-    .dropdown {left: 50%; top: 30%; transform: translateX(35%);}
-    .dropdown li:hover {background-color: #4c9e9e;}
-
-
-/* Oliver*/
-    #navbar {background: #222;}
-    #navbar ul {flex-direction: column;}
-    #navbar a {height: 48px;}
-    .dropdown,.dropmenu {position: static; width: 100%;}
-    .dropdown a {width: 95% !important;}
-    .dropmenu a {width: 90% !important;}
+/* Tablet Menu */
+@media all and (min-width: 700px) {
+    .menu {justify-content: center;}
+    .logo {flex: 1;}
+    .item.button {width: auto; order: 1; display: block;}
+    .toggle {flex: 1; text-align: right; order: 2;}
+    
+    /* Bottom up from tablet screen */
+    .menu li.button a {padding: 10px 15px; margin: 5px 0;}
+    .button a {background: #00A3A3; border: 1px #00A3A3 solid;}
+    .button.secondary {border: 0;}
+    .button.secondary a {background: transparent; border: 1px #00A3A3 solid;}
+    .buton:not(.secondary) a:hover {background: royalblue; border-color: darkblue;}
 }
 
+/* Desktop Menu */
+@media all and (min-width: 960px) {
+    .menu {align-items: flex-start; flex-wrap: nowrap; background: none;}
+    .logo {order: 0;}
+    .item {order: 1; position: relative; display: block; width: auto;}
+    .button {order: 2;}
+    .submenu-active .submenu {display: block; position: absolute; left: 0; top: 68px; background: #00A3A3;}
+    .toggle {display: none;}
+    .submenu-active {border-radius: 0;}
+}

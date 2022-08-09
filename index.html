@@ -1,61 +1,62 @@
 <!DOCTYPE html>
-<!-- Coding by Tomas Toohey & Oliver Madge -->
-<head>
-  <!-- Site Title -->
-  <title>Code Warriors | Assessment 3</title>
-  <!--Add favicon -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-  <!-- View point for sizing of site -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome link -->
-  <script src="https://kit.fontawesome.com/db74b1afc5.js" crossorigin="anonymous"></script>
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="main.css">
-  <!-- Link to Javascript code -->
-  <script src="jscode.js"></script>
-</head>
-<body>
-<!-- Header -->
-<div class="header">
-  <nav class="navbar">
-    <!-- Logo -->
-    <a href="#" class="logo"><img src="images/logos/logoLTW.png" /></a>
-    <!-- Navigation -->
-    <ul class="nav-links">
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      <!-- Menus -->
-      <div class="menu">
-        <li><a href="#">Home</a></li>
-        <li class="dropmenu"><a href="#">Team</a>
+<!-- Coding by Tomas Toohey & Oliver Madge-->
+<html>
+  <head>
+    <!-- Site Title -->
+    <title>Code Warriors | Assessment 3</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Font Awseome -->
+    <script src="https://kit.fontawesome.com/db74b1afc5.js" crossorigin="anonymous"></script>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <!-- Navigation/Header -->
+    <nav>
+      <!-- Menu -->
+      <ul class="menu">
+        <!-- Logo -->
+        <li class="logo"><a href="#"><img src="images/logos/logoLTW.png"></a></li>
+        <!-- Menu Items -->
+        <li class="item"><a href="#">Home</a></li>
         <!-- Team Drop Menu -->
-        <ul class="dropdown">
-          <li><a href="#">Team Members</a></li>
-          <li><a href="#">Group Processes</a></li>
-          <li><a href="#">Career Plans</a></li>
-          <li><a href="#">Group Reflection</a></li>
-          <li><a href="#">Team Meetings</a></li>
-        </ul>
+        <li class="item has-submenu">
+          <a href="#" tabindex="0">Team</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Members</a></li>
+            <li class="subitem"><a href="#">Group Processes</a></li>
+            <li class="subitem"><a href="#">Career Plans</a></li>
+            <li class="subitem"><a href="#">Group Reflection</a></li>
+            <li class="subitem"><a href="#">Team Meetings</a></li>
+          </ul>
         </li>
-        <li class="dropmenu"><a href="#">Project</a>
         <!-- Project Drop Menu -->
-        <ul class="dropdown">
-          <li><a href="#">Description</a></li>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Aims</a></li>
-          <li><a href="#">Plans & Progress</a></li>
-          <li><a href="#">Roles</a></li>
-          <li><a href="#">Scope & Limits</a></li>
-          <li><a href="#">Testing</a></li>
-          <li><a href="#">Timeframe</a></li>
-          <li><a href="#">Risks</a></li>
-          <li><a href="#">Group Processes & Communication</a></li>
-        </ul>
+        <li class="item has-submenu">
+          <a href="#" tabindex="0">Project</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Description</a></li>
+            <li class="subitem"><a href="#">Overview</a></li>
+            <li class="subitem"><a href="#">Aims</a></li>
+            <li class="subitem"><a href="#">Plan & Progress</a></li>
+            <li class="subitem"><a href="#">Roles</a></li>
+            <li class="subitem"><a href="#">Scope & Limits</a></li>
+            <li class="subitem"><a href="#">Testing</a></li>
+            <li class="subitem"><a href="#">Timeframe</a></li>
+            <li class="subitem"><a href="#">Risks</a></li>
+            <li class="subitem"><a href="#">Communication</a></li>
+          </ul>
         </li>
-        <li><a href="#">Skills & Jobs</a></li>
-        <li><a href="#">References</a></li>
-      </div>
-    </ul>
-  </nav>
- </div>
-</body>
+        <li class="item"><a href="#">Skills & Jobs</a></li>
+        <li class="item"><a href="#">References</a></li>
+        <li class="item button"><a href="#">Contact Us</a></li>
+        <li class="item button secondary"><a href="#">Buy Now</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Link to Java Script -->
+    <script src="jscode.js"></script>
+  </body>
+</html>
