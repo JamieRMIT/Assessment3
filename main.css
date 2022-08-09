@@ -39,7 +39,7 @@ a {color: white; text-decoration: none;}
     .button a {background: #00A3A3; border: 1px #00A3A3 solid;}
     .button.secondary {border: 0;}
     .button.secondary a {background: transparent; border: 1px #00A3A3 solid;}
-    .buton:not(.secondary) a:hover {background: royalblue; border-color: darkblue;}
+    .buton:not(.secondary) a:hover {background: #00A3A3; border-color: #007A7A;}
 }
 
 /* Desktop Menu */
@@ -51,4 +51,5 @@ a {color: white; text-decoration: none;}
     .submenu-active .submenu {display: block; position: absolute; left: 0; top: 68px; background: #00A3A3;}
     .toggle {display: none;}
     .submenu-active {border-radius: 0;}
+    .buton:not(.secondary) a:hover {background: #00A3A3; border-color: #007A7A;}
 }
