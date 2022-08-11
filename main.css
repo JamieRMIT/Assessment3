@@ -24,7 +24,7 @@ h6 {font-size: 1.2rem;}
 
 
 /* Navigation Menu */
-.menu {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; z-index: 2;}
+.menu {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; z-index: 1;}
 .menu li a {display: block; padding: 15px 5px;}
 .menu li.subitem a {padding: 15px;}
 .toggle {order: 1; font-size: 20px;}
