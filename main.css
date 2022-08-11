@@ -45,7 +45,7 @@ h6 {font-size: 1.2rem;}
 .container-fluid {width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
 .bg {background-color: teal;}
 .text-snow {color: #FAF6F6;}
-.footer-setup {position:fixed; bottom: 0; padding-bottom: 3rem; padding-top: 3rem; z-index: 1;}
+.footer-setup {position:relative; bottom: 0; padding-bottom: 3rem; padding-top: 3rem; z-index: 1;}
 .row {display: flex; flex-direction: column; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; text-align: center;}
 .row-setup {padding-top: 3rem;}
 .footer-row {flex: 1; margin-bottom: 3rem;}
