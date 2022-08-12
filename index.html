@@ -6,8 +6,9 @@
         <!--Link to CSS-->
         <link rel="stylesheet" href="main.css" />
     </head>
-    <body>
-        <!--Navigation Menu-->
+    <body class="site">
+        <header class="site-header">
+                    <!--Navigation Menu-->
         <nav class="navigationMenu">
             <ul class="menu">
                 <li class="logo"><a href="#"><img src="images/logos/logoLTW.png"></a></li>
@@ -44,84 +45,83 @@
                 <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+        </header>
         <!-- Page Code -->
-        <div class="container">
-          <section id="home">
-            <div class="main-info-section">
-              <h1>E-Iink Display</h1>
-              <h4>Displaying informative and customisable information to others on the road has never been this easy!</h4>
-              <div class="call-actions">
-                <a href="#" class="action-btn"> More Info</a>
-                <a href="#" class="action-ghost-btn">Meat the Team</a>
-              </div>
+        <main class="site-content">
+            <div class="container-fluid bg-gradient p3 p0" style="padding-top: 150px; padding-bottom: 350px; height: 100%;">
+                <div class="row mx0 align-items-c">
+                    <div class="coll-50 pl text-center text-left">
+                        <h1 class="h1-2 text-uppercase mb3">E-Ink Displays</h1>
+                        <p class="mb text-snow">Displaying informative and customisable information to others on the road has never been this easy!</p>
+                        <p class="mb text-snow">You can display you L or P plates or Share riding service with our simple design.</p>
+                        <a class="btn btn-dark text-uppercase mt p1" href="#">Learn More</a>
+                        <a class="btn btn-ghost text-uppercase mt p1" href="#">Buy Now</a>
+                    </div>
+                    <div class="coll-50 p0 text-right">
+                        <img class="img-fluid image1 mt3 mt0" src="images/car-driving.jpeg" alt="Car Drving" />
+                        <img class="img-fluid image2 mt3 mt0" src="images/sideofroad.jpeg" alt="Car Off Road" />
+                        <div class="shape1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="photos">
-              <img class="man-driving"src="https://images.pexels.com/photos/13033347/pexels-photo-13033347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-              <img class="aerial-car"src="https://images.pexels.com/photos/5059323/pexels-photo-5059323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-              <div class="shape1"></div>
-              <div class="shape2"></div>
-              <div class="shape3"></div>
-              <div class="shape4"></div>
-            </div>
-      
-          </section>
-        </div>
-      
+        </main>
         <!-- Footer -->
-        <div class="container-fluid bg text-snow footer-setup" style="margin-top: 90px;">
-            <div class="row row-setup">
-                <div class="footer-row row1">
-                    <a class="navbar-brand" href="index.html">
-                        <h1 class="brand-name text-snow">Code<span>Warriors</span></h1>
-                    </a>
-                    <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                    <h6 class="text-uppercase text-snow follow">Follow Us</h6>
-                    <div class="d-flex justify-start">
-                        <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
-                            <i class="fab fa-twitter"></i>
+        <footer class="site-footer">
+            <div class="container-fluid bg text-snow footer-setup">
+                <div class="row row-setup">
+                    <div class="footer-row row1">
+                        <a class="navbar-brand" href="index.html">
+                            <h1 class="brand-name text-snow">Code<span>Warriors</span></h1>
                         </a>
-                        <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="btn btn-lg btn-primary btn-lg-sq" href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
+                        <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                        <h6 class="text-uppercase text-snow follow">Follow Us</h6>
+                        <div class="d-flex justify-start-sb">
+                            <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-sq mr" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn btn-lg btn-primary btn-lg-sq" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-row row2">
-                    <h4 class="text-uppercase text-snow mb pt">Get In Touch</h4>
-                    <p><i class="fa fa-map-marker-alt text-snow mr"></i>124 La Trobe St, Melbourne VIC 3000</p>
-                    <p><i class="fa fa-phone-alt text-snow mr"></i>+61 7 4740 4319</p>
-                    <p><i class="fa fa-envelope text-snow mr"></i>info@codwarriors.com.au</p>
-                </div>
-                <div class="footer-row row3">
-                    <h4 class="text-uppercase text-snow mb pt">Quick Links</h4>
-                    <div class="d-flex flex-cloumn justify-content-s">
-                        <a class="text-snow mb2" href="index.html"><i class="fa fa-angle-right text-snow mr2"></i> Home</a>
-                        <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Team</a>
-                        <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Project</a>
-                        <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> SKills & Jobs</a>
-                        <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> References</a>
-                        <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Contact Us</a>
+                    <div class="footer-row row2">
+                        <h4 class="text-uppercase text-snow mb pt">Get In Touch</h4>
+                        <p><i class="fa fa-map-marker-alt text-snow mr"></i>124 La Trobe St, Melbourne VIC 3000</p>
+                        <p><i class="fa fa-phone-alt text-snow mr"></i>+61 7 4740 4319</p>
+                        <p><i class="fa fa-envelope text-snow mr"></i>info@codwarriors.com.au</p>
                     </div>
-                </div>
-                <div class="footer-row row4">
-                    <h4 class="text-uppercase text-snow mb pt">Newsletter</h4>
-                    <p class="mb">Keep up to date with our newsletter</p>
-                    <div class="w100 mb3">
-                        <div class="input-group">
-                            <input class="form-control" type="text" style="padding: 25px;" placeholder="Your Email">
-                            <div class="input-group-append">
-                                <button class="btn btn-round px text-center btn-primary text-uppercase r">Sign Up</button>
+                    <div class="footer-row row3">
+                        <h4 class="text-uppercase text-snow mb pt">Quick Links</h4>
+                        <div class="d-flex flex-cloumn justify-content-s">
+                            <a class="text-snow mb2" href="index.html"><i class="fa fa-angle-right text-snow mr2"></i> Home</a>
+                            <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Team</a>
+                            <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Project</a>
+                            <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> SKills & Jobs</a>
+                            <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> References</a>
+                            <a class="text-snow mb2" href="#"><i class="fa fa-angle-right text-snow mr2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="footer-row row4">
+                        <h4 class="text-uppercase text-snow mb pt">Newsletter</h4>
+                        <p class="mb">Keep up to date with our newsletter</p>
+                        <div class="w100 mb3">
+                            <div class="input-group">
+                                <input class="form-control" type="text" style="padding: 25px;" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-round px text-center btn-primary text-uppercase r">Sign Up</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
         <!--Link to Java Script-->
         <script src="jscode.js"></script>
     </body>
