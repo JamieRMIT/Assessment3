@@ -56,3 +56,23 @@ function closeSubmenu(e) {
    
   /* Event listener */
   document.addEventListener("click", closeSubmenu, false);
+
+  /*Get the button*/
+  backtotop = document.getElementById("btntop");
+
+  /* When scrolling down 20px from top show button */
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backtotop.style.display = "block";
+    } else {
+      backtotop.style.display ="none";
+    }
+  }
+
+  /* When clicked send to top */
+  function topFunction() {
+    document.body.scrollTop = 0; //Safari
+    document.documentElement.scrollTop = 0; //Chrome, Firefox, Edge and Opera
+  }
