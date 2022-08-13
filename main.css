@@ -26,9 +26,9 @@ a {color: white; text-decoration: none;}
 .text-uppercase {text-transform: uppercase;}
 .vertical-middle {vertical-align: middle;}
 .text-center {text-align: center;}
-
 .text-right {text-align: right;}
 .text-snow {color: #D6EBEB}
+.text-yellow {color: #FFAA17}
 
 /* images */
 .img-fluid {max-width: 100%; height: auto;}
@@ -82,9 +82,11 @@ h6 {font-size: 1.2rem;}
 .container-fluid, .teamcontainer {width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; height: inherit;}
 .teamcontainer {min-width: 540px;}
 
+
 /* Alignment */
 .justify-start-sb {justify-content:space-between;}
 .justify-content-s {justify-content: flex-start;}
+.justify-content-c {justify-content: center;}
 .align-items-c {align-items: center;}
 .position-r {position:relative;}
 
@@ -121,6 +123,7 @@ h6 {font-size: 1.2rem;}
 .mt3 {margin-top: 3rem}
 .mt0 {margin-top: 0;}
 .mlr {margin-left: 0.25rem; margin-right: 0.25rem;}
+.mbt {margin-top: 2rem; margin-bottom: 2rem;}
 
 /* Padding */
 .px {padding-left: 1rem; padding-right: 1rem;}
@@ -147,11 +150,27 @@ w100 {width: 100%;}
 /* Overflow */
 .overflow-hidden {overflow: hidden;}
 
-/* Team Overlay */
-.team-item .team-overlay {position: absolute; display: flex; align-items: center; justify-content: center; top: 30px; right: 30px; bottom: 30px; left: 30px; border-radius: 4px; background: #222429; transition: .5s; opacity: 0;}
+/* Team Members */
+#Team {margin: 0; padding:0; box-sizing: border-box; align-items: center;}
+#Team {position: relative; height: auto; display: flex; }
+section .card .image {height: 140px; width: 140px; border-radius: 50%; padding: 3px; background: teal}
+section .card .image img {height: 100%; width: 100%; object-fit: cover; border-radius: 50%; border: 3px solid #D6EBEB;}
+.card {position: relative; background: #D6EBEB ;border-radius: 20px; margin: 20px 0;}
+.card::before {content: ""; position: absolute; height: 40%; width: 100%; background: teal; border-radius: 20px 20px 0 0;}
+.card .card-content {display: flex; flex-direction: column; align-items: center; padding: 30px; position: relative; z-index: 100;}
+.card .media-icons {position: absolute; top: 10px; right: 20px; display: flex; flex-direction: column; align-items: center;}
+.card .media-icons i {color: #D6EBEB; opacity: 0.6; margin-top: 10px; transition: all 0.3s ease; cursor: pointer;}
+.card .media-icons i:hover {opacity: 1;}
+.card .name-profession {display: flex; flex-direction: column; align-items: center; margin-top: 10px; color: #333;}
+.name-profession .name {font-size: 15px; font-weight: 600;}
+.name-profession .profession {font-size: 12px; font-weight: 500;}
+.card .rating {display: flex; align-items: center; margin-top: 18px;}
+.card .rating i {font-size: 18px; margin:0 2px; color: #FFAA17;}
+.card .button {width: 100%; display: flex; justify-content: space-around; margin-top: 20px;}
+.card .button button {background: #FFAA17; outline: none; border: none; color: #FFF; padding: 8px 22px; border-radius: 20px; font-size: 14px; transition: all 0.3s ease; cursor: pointer;}
+.button button:hover {background: #F59B00}
+.card .button a {background: transparent; border-color: transparent;}
 
-/* Owl Carousel */
-.team-carousel .owl-nav .owl-prev, .team-carousel .owl-nav .owl-next {position: relative; width: 60px; height: 60px; margin: 15px 0; display: flex; align-items: center; justify-content: center; color: #222429; background: #FFAA17; border-radius: 4px; font-size: 22px; transition: .5s;}
 
 /* Tablet Menu */
 @media all and (min-width: 768px) {
@@ -181,6 +200,7 @@ w100 {width: 100%;}
 
     /* Container */
     .teamcontainer {max-width: 720px;}
+    .swiper {width: 720px;}
 }
 
 /* Desktop Menu */
@@ -221,4 +241,5 @@ w100 {width: 100%;}
 
     /* Containers */
     .teamcontainer {max-width: 1140px;}
+    .swiper {width: 1024px;}
 }
