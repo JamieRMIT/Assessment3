@@ -21,6 +21,7 @@ a {color: white; text-decoration: none;}
 /* Backgrouds */
 .bg-gradient {background-image: linear-gradient(to right top, #2f3e46, #2d4e59, #255e69, #176f76, #008080); background-attachment: fixed;}
 .bg-light {background-color: #F4F5F8;}
+.bg-dark {background-color: #222429;}
 .bg {background-color: teal;}
 .bg-yellow {background-color: #FFAA17;}
 .bg-white {background-color: #FFF;}
@@ -34,6 +35,7 @@ a {color: white; text-decoration: none;}
 .text-yellow {color: #FFAA17}
 .text-teal {color: teal;}
 .text-black {color: #333}
+.text-body {color: #686A6F;}
 
 /* images */
 .img-fluid {max-width: 100%; height: auto;}
@@ -86,6 +88,9 @@ h6 {font-size: 1.2rem;}
 .container-fluid, .teamcontainer {width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; height: inherit;}
 .teamcontainer {min-width: 540px;}
 
+/* Pricing */
+.pricing {padding-bottom: 1rem;}
+
 /* Headers */
 .page-header {height: 400px; margin-bottom: 90px;}
 
@@ -95,6 +100,8 @@ h6 {font-size: 1.2rem;}
 .justify-content-c {justify-content: center;}
 .align-items-c {align-items: center;}
 .position-r {position:relative;}
+.align-top {vertical-align: top;}
+.align-bottom {vertical-align: bottom;}
 
 /* Buttons */
 .btn {display: inline-flex; font-weight: 400; user-select: none; background-color: transparent; border: 1px solid transparent; text-align: center; justify-content: center; align-items: center; font-family: 'Rubik', sans-serif;}
@@ -107,6 +114,8 @@ h6 {font-size: 1.2rem;}
 .btn-ghost {border-radius: 20px; background-color: transparent; border: 2px solid teal; width: 160px; color: #f8f9fa;}
 .r {height: 52px; margin-left: -5;}
 .back-to-top {position: fixed; display:none; right: 30px; bottom: 30px; z-index: 99;}
+.btn-disabled {background-color: #005252; opacity: 0.5;}
+.btn-disabled:hover {background-color: #005252; border-color: #005252;}
 
 /* Images */
 .image1 {visibility: hidden;}
@@ -116,6 +125,7 @@ h6 {font-size: 1.2rem;}
 /* Shapes */
 .shape1 {visibility: hidden;}
 .rounded {border-radius: 0.25rem;}
+.rounded-circle {border-radius: 50%;}
 
 /* Margins */
 .m0 {margin: 0;}
@@ -123,9 +133,11 @@ h6 {font-size: 1.2rem;}
 .mb2 {margin-bottom: 0.5rem;}
 .mb3 {margin-bottom: 1rem;}
 .mb4 {margin-bottom: 3rem;}
+.mb5 {margin-bottom: 0;}
 .mt {margin-top: 0.25rem;}
 .mt3 {margin-top: 3rem}
 .mt0 {margin-top: 0;}
+.mbt1 {margin-bottom: 1rem; margin-top: 1rem;}
 .mbt {margin-top: 2rem; margin-bottom: 2rem;}
 .mr {margin-right: 0.5rem;}
 .mr2 {margin-right: 0.5rem;}
@@ -136,12 +148,17 @@ h6 {font-size: 1.2rem;}
 .px {padding-left: 1rem; padding-right: 1rem;}
 .p0 {padding-left: 0; padding-right: 0;}
 .pt {padding-top: 0.3125rem;}
+.pt3 {padding-top: 3rem;}
+.pb1 {padding-bottom: 1rem;}
 .p1 {padding-bottom: 1rem; padding-top: 1rem;}
 .p2 {padding: 1.5rem;}
 .p3 {padding: 3rem;}
+.pbt05 {padding-bottom: 0.5rem; padding-top: 0.5rem;}
+.pbt1 {padding-bottom: 1.5rem; padding-top: 1.5rem;}
 .ptb3 {padding-bottom: 3rem; padding-top: 3rem;}
 .plr1 {padding-left: 1.5rem; padding-right: 1.5rem;}
 .plr3 {padding-left: 3rem; padding-right: 3rem;}
+.plr5 {padding-left: 5rem; padding-right: 5rem;}
 
 /* Flex Rows & Columns */
 .d-flex {display: flex;}
@@ -153,10 +170,12 @@ h6 {font-size: 1.2rem;}
 .sccol2 {display: none;}
 .scrow1 {padding-top: 150px; padding-bottom: 100px;}
 .row {display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;}
+.row2 {display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; gap: 20px;}
 .row3, .row4 {display: none;}
 .flex-row {flex-direction: row;}
 .flex-cloumn {flex-direction: column;}
 .cols10 {flex: 0 0 83.33333%; max-width: 83.33333%;}
+.cols3 {flex: 0 0 20%; max-width: 20%;}
 .col12 {flex: 0 0 100%; max-width: 100%}
 
 /* Contact Form */
