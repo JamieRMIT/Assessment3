@@ -5,8 +5,10 @@
         <script src="https://kit.fontawesome.com/db74b1afc5.js" crossorigin="anonymous"></script>
         <!--Link to CSS-->
         <link rel="stylesheet" href="main.css" />
-                <!--Title-->
-                <title>Code Warriors | Assessment 3 | References</title>
+        <!--Title-->
+        <title>Code Warriors | Assessment 3 | References</title>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body class="site">
         <header class="site-header">
@@ -49,9 +51,52 @@
         </nav>
         </header>
         <!-- Page Code -->
-        <main class="site-content">
+        <main class="site-content" style="height: 1100px;">
+            <div class="page-header container-fluid bg d-flex flex-cloumn align-items-c justify-content-c">
+                <h1 class="h1-3 text-uppercase mb3">Contact Us</h1><br />
+                <div class="d-inline-flex text-snow">
+                    <h6 class="text-uppercase m0">
+                        <a class="text-snow" href="index.html">Home</a>
+                    </h6>
+                    <h6 class="m0 px">|</h6>
+                    <h6 class="text-uppercase m0 text-yellow">Contact Us</h6>
+                </div>
+            </div>
+            <!-- Contact Us -->
+            <div class="container-fluid ptb3 p0">
+                <h1 class="h1-4 text-uppercase text-black text-center ptb3">Contact Us</h1>
+                <!-- Contact Map -->
+                <div class="row mx0">
+                    <div class="col12 mx0" style="width: 100%; height: 600px;">
+                        <div class="position-relative">
+                            <iframe class="w100 h500" src="https://www.openstreetmap.org/export/embed.html?bbox=144.9620434641838%2C-37.810254387304084%2C144.96558398008347%2C-37.8083641556655&amp;layer=mapnik&amp;marker=-37.809309277533266%2C144.96381372213364" style="border: 1px solid black"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-container" style="margin-top: -400px;">
+                    <form>
+                      <label for="fname">Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Email</label>
+                      <input type="text" id="email" name="email" placeholder="Your email address..">
+                  
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+            </div>
 
-        </main>
         <!-- Footer -->
         <footer class="site-footer">
             <div class="container-fluid bg text-snow footer-setup">
