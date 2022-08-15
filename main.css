@@ -25,6 +25,7 @@ a {color: white; text-decoration: none;}
 .bg {background-color: teal;}
 .bg-yellow {background-color: #FFAA17;}
 .bg-white {background-color: #FFF;}
+.bg-dark2 {background-color: #005252;}
 
 /* Text */
 .text-uppercase {text-transform: uppercase;}
