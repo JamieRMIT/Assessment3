@@ -163,15 +163,15 @@ h6 {font-size: 1.2rem;}
 .ptb3 {padding-bottom: 3rem; padding-top: 3rem;}
 .plr1 {padding-left: 1.5rem; padding-right: 1.5rem;}
 .plr3 {padding-left: 3rem; padding-right: 3rem;}
-.plr5 {padding-left: 5rem; padding-right: 5rem;}
+.pl5 {padding-left: 3rem;}
 .pl1 {padding-left: 5rem;}
 
 /* Flex Rows & Columns */
 .d-flex {display: flex;}
 .d-inline-flex {display: inline-flex;} 
-.row1 {flex-basis: 25%;}
+.row1 {flex-basis: 20%;}
 .row2 {flex-basis: 15%;}
-.row3 {flex-basis: 25%;}
+.row3 {flex-basis: 20%;}
 .row4 {flex-basis: 25%;}
 .sccol2 {display: none;}
 .scrow1 {padding-top: 150px; padding-bottom: 100px;}
