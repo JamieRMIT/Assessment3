@@ -144,9 +144,9 @@ h6 {font-size: 1.2rem;}
 .mbt {margin-top: 2rem; margin-bottom: 2rem;}
 .mr {margin-right: 0.5rem;}
 .mr2 {margin-right: 0.5rem;}
-.mlr {margin-left: 0.25rem; margin-right: 0.25rem;}
-.mlr3 {margin-left: 15rem; margin-right: 15rem;}
-.mlr4 {margin-left: 10rem; margin-right: 10rem;}
+.mlr {margin-left: 0.25rem; margin-right: 0.25rem; text-align: justify;}
+.mlr3 {margin-left: 15rem; margin-right: 15rem; text-align: justify;}
+.mlr4 {margin-left: 10rem; margin-right: 10rem; text-align: justify;}
 .mx0 {margin-left: 0; margin-right: 0;}
 
 /* Padding */
