@@ -216,7 +216,7 @@ section .card .image img {height: 100%; width: 100%; object-fit: cover; border-r
 .card .media-icons {position: absolute; top: 10px; right: 20px; display: flex; flex-direction: column; align-items: center;}
 .card .media-icons i {color: #D6EBEB; opacity: 0.6; margin-top: 10px; transition: all 0.3s ease; cursor: pointer;}
 .card .media-icons i:hover {opacity: 1;}
-.card .name-profession {display: flex; flex-direction: column; align-items: center; margin-top: 10px; color: #333;}
+.card .name-profession {display: flex; flex-direction: column; align-items: center; margin-top: 3.5rem; color: #333;}
 .name-profession .name {font-size: 15px; font-weight: 600;}
 .name-profession .profession {font-size: 12px; font-weight: 500;}
 .card .rating {display: flex; align-items: center; margin-top: 18px;}
